@@ -67,8 +67,7 @@ function doCopy(): void {
 function doDownload(): void {
   if (!outputArea.value) return;
   const fmt = toSelect.value;
-  const extMap: Record<string, string> = { pln: 'pln', json: 'json', yaml: 'yaml', toml: 'toml', ini: 'ini', xml: 'xml' };
-  const ext = extMap[fmt] ?? 'txt';
+  const ext = fmt;
   const blob = new Blob([outputArea.value], { type: 'text/plain' });
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
