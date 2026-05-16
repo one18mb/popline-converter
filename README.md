@@ -1,10 +1,12 @@
 # PopLine Converter
 
-PopLine ↔ JSON / YAML / TOML / INI / XML 在线格式转换器。纯前端，零后端，GNU 简约风格。
+PopLine ↔ JSON / YAML / TOML / INI / XML 在线格式转换器。纯前端，零后端。
 
 ## 使用
 
-直接访问 GitHub Pages 链接，或本地运行：
+在线体验：[https://one18mb.github.io/popline-converter/](https://one18mb.github.io/popline-converter/)
+
+本地运行：
 
 ```bash
 npm install
