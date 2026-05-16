@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="app.title">PopLine 转换器</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- Top bar -->
+  <div id="topbar">
+    <span id="logo"><strong data-i18n="app.title">PopLine Converter</strong></span>
+    <span id="format-selectors">
+      <span data-i18n="from">From</span>:
+      <select id="from-format">
+        <option value="pln">pln</option>
+        <option value="json">json</option>
+        <option value="yaml">yaml</option>
+        <option value="toml">toml</option>
+        <option value="ini">ini</option>
+        <option value="xml">xml</option>
+      </select>
+      <a href="#" id="swap-btn" data-i18n="swap">[ swap ]</a>
+      <span data-i18n="to">To</span>:
+      <select id="to-format">
+        <option value="json">json</option>
+        <option value="yaml" selected>yaml</option>
+        <option value="toml">toml</option>
+        <option value="ini">ini</option>
+        <option value="xml">xml</option>
+      </select>
+    </span>
+    <span id="lang-switch">
+      <a href="#" data-lang="zh" class="lang-active">中文</a>
+      <span class="sep">|</span>
+      <a href="#" data-lang="en">EN</a>
+    </span>
+  </div>
+
+  <!-- Editor area -->
+  <div id="editor">
+    <div id="input-pane">
+      <div class="pane-header">
+        <span data-i18n="input">-- Input</span>
+      </div>
+      <textarea id="input-area" data-i18n-placeholder="placeholder.input" placeholder="Paste or type here..."></textarea>
+    </div>
+    <div id="output-pane">
+      <div class="pane-header">
+        <span data-i18n="output">-- Output</span>
+        <span id="status-msg"></span>
+      </div>
+      <textarea id="output-area" data-i18n-placeholder="placeholder.output" placeholder="Conversion result..." readonly></textarea>
+    </div>
+  </div>
+
+  <!-- Actions -->
+  <div id="actions">
+    <a href="#" id="convert-btn" data-i18n="convert">[ Convert ]</a>
+    <a href="#" id="copy-btn" data-i18n="copy">[ Copy ]</a>
+    <a href="#" id="download-btn" data-i18n="download">[ Download ]</a>
+    <a href="#" id="clear-btn" data-i18n="clear">[ Clear ]</a>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer">
+    PopLine Converter <span data-i18n="footer.version">v0.1.0</span>
+    &mdash; <a href="https://github.com/one18mb/popline-converter" target="_blank" data-i18n="source">Source</a>
+    &mdash; <a href="https://github.com/one18mb/popline-converter/issues" target="_blank" data-i18n="report">Report bug</a>
+  </div>
+
+</div>
+
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
