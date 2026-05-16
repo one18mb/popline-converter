@@ -10,7 +10,7 @@
 
 <div id="app">
 
-  <!-- Top bar -->
+  <!-- Top bar — one row: logo, format selectors, swap+actions, lang -->
   <div id="topbar">
     <span id="logo"><strong data-i18n="app.title">PopLine Converter</strong></span>
     <span id="format-selectors">
@@ -23,7 +23,6 @@
         <option value="ini">ini</option>
         <option value="xml">xml</option>
       </select>
-      <a href="#" id="swap-btn" data-i18n="swap">[ swap ]</a>
       <span data-i18n="to">To</span>:
       <select id="to-format">
         <option value="pln">pln</option>
@@ -33,20 +32,19 @@
         <option value="ini">ini</option>
         <option value="xml">xml</option>
       </select>
+      <a href="#" id="swap-btn" data-i18n="swap">[ swap ]</a>
+    </span>
+    <span id="top-actions">
+      <a href="#" id="convert-btn" data-i18n="convert">[ Convert ]</a>
+      <a href="#" id="copy-btn" data-i18n="copy">[ Copy ]</a>
+      <a href="#" id="download-btn" data-i18n="download">[ Download ]</a>
+      <a href="#" id="clear-btn" data-i18n="clear">[ Clear ]</a>
     </span>
     <span id="lang-switch">
       <a href="#" data-lang="zh" class="lang-active">中文</a>
       <span class="sep">|</span>
       <a href="#" data-lang="en">EN</a>
     </span>
-  </div>
-
-  <!-- Actions — top, between topbar and editor -->
-  <div id="actions">
-    <a href="#" id="convert-btn" data-i18n="convert">[ Convert ]</a>
-    <a href="#" id="copy-btn" data-i18n="copy">[ Copy ]</a>
-    <a href="#" id="download-btn" data-i18n="download">[ Download ]</a>
-    <a href="#" id="clear-btn" data-i18n="clear">[ Clear ]</a>
   </div>
 
   <!-- Editor area -->
